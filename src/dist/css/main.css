@@ -36,6 +36,12 @@ body {
 .manga-list {
   display: flex;
   gap: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.manga-list::-webkit-scrollbar {
+  display: none;
 }
 
 .manga-card {
@@ -124,4 +130,18 @@ body {
   border: 1px solid #2e2e2e;
   background-color: orange;
   color: #2e2e2e;
+}
+
+@media screen and (max-width: 1000px) {
+  .manga-list {
+    padding: 1.5rem 0;
+  }
+
+  .manga-card {
+    flex-direction: column;
+  }
+  .manga-card img {
+    width: 200px;
+    height: auto;
+  }
 }
