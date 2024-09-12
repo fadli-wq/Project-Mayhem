@@ -1,3 +1,4 @@
+// eslint-disable-next-line react/prop-types
 const Rating = ({ value }) => {
   // Membuat array yang diisi dengan bintang sesuai nilai rating
   const stars = [];
