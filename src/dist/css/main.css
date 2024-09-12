@@ -1,0 +1,127 @@
+body {
+  background-color: gray;
+}
+
+* {
+  font-family: "poppins", sans-serif;
+}
+
+.custom-navbar {
+  background-color: #5b5b5b; /* Warna latar belakang kustom */
+}
+
+:root {
+  --primary-color: #f6f8fd;
+  --secondary-color: #dc3545;
+  --color-text: #231942;
+  --navbar-color: #ffffff;
+  --navbar-color-text: #000000;
+}
+
+.homepage {
+  padding: 20px;
+  background-color: #2e2e2e;
+}
+
+.manga-section {
+  margin-bottom: 40px;
+}
+
+.manga-section h2 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.manga-list {
+  display: flex;
+  gap: 20px;
+}
+
+.manga-card {
+  background-color: #3a3a3a;
+  color: white;
+  width: 100%; /* Mengubah lebar menjadi lebih fleksibel */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex; /* Tambahkan flex untuk membuat tata letak horisontal */
+  align-items: flex-start; /* Agar gambar dan teks rata atas */
+  gap: 15px; /* Jarak antara gambar dan teks */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.manga-card a {
+  text-decoration: none; /* Menghapus garis bawah dari link */
+  color: inherit; /* Memastikan warna teks tetap */
+}
+
+.manga-card:hover {
+  transform: scale(1.05); /* Membesarkan sedikit */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Bayangan lebih tebal saat dihover */
+  cursor: pointer; /* Menunjukkan bahwa elemen dapat diklik */
+}
+
+.manga-card img {
+  width: 120px; /* Tentukan lebar gambar */
+  height: 270px; /* Mempertahankan proporsi gambar */
+  border-radius: 5px;
+  margin-bottom: 0; /* Menghapus margin bawah gambar */
+}
+
+.manga-info {
+  flex: 1; /* Membuat teks manga menyesuaikan ruang yang tersedia */
+}
+
+.manga-info h3 {
+  margin: 0 0 10px; /* Menghapus margin atas */
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.manga-info p {
+  margin: 5px 0;
+  text-decoration: none;
+}
+
+.manga-info p:last-child {
+  color: #aaa;
+}
+
+.rating {
+  display: flex;
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.full-star {
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23FFD700"%3E%3Cpath d="M12 .587l3.668 7.429 8.198 1.191-5.917 5.761 1.396 8.139L12 18.896l-7.346 3.861 1.396-8.139L.133 9.207l8.198-1.191L12 .587z"/%3E%3C/svg%3E');
+}
+
+.half-star {
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23FFD700"%3E%3Cpath d="M12 .587l3.668 7.429 8.198 1.191-5.917 5.761 1.396 8.139L12 18.896l-7.346 3.861 1.396-8.139L.133 9.207l8.198-1.191L12 .587z" /%3E%3Cpath fill="%23ccc" d="M12 18.896V.587L8.332 8.016 0 9.207l5.917 5.761L4.521 22.993z" transform="scale(-1, 1) translate(-24, 0)" /%3E%3C/svg%3E');
+}
+
+.empty-star {
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ccc"%3E%3Cpath d="M12 .587l3.668 7.429 8.198 1.191-5.917 5.761 1.396 8.139L12 18.896l-7.346 3.861 1.396-8.139L.133 9.207l8.198-1.191L12 .587z"/%3E%3C/svg%3E');
+}
+
+.btn-orange {
+  color: orange;
+  border: 1px solid orange;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.btn-orange:hover {
+  border: 1px solid #2e2e2e;
+  background-color: orange;
+  color: #2e2e2e;
+}
